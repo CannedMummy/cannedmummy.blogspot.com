@@ -1,0 +1,48 @@
+﻿<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!--jQuery-->
+<script src="{{url.file}}/js/jquery-3.1.1.min.js"
+        type="text/javascript">
+</script>
+<script src="{{url.file}}/js/jquery.cookie.min.js"
+        type="text/javascript">
+</script>
+
+<!--Bootstrap-->
+<link href="{{url.file}}/css/bootstrap.min.css"
+      rel="stylesheet" type="text/css" />
+<script src="{{url.file}}/js/bootstrap.min.js"
+        type="text/javascript">
+</script>
+
+<!--Modernizr-->
+<script src="{{url.file}}/js/modernizr-custom.min.js"></script>
+
+<!--Font Awesome-->
+<link href="{{url.file}}/css/font-awesome.min.css"
+      rel="stylesheet" type="text/css" />
+
+<!--Others-->
+<link href="{{url.file}}/css/site.min.css"
+      rel="stylesheet" type="text/css" />
+<script src="{{url.file}}/js/site.min.js"
+        type="text/javascript">
+</script>
+
+<!-- page title -->
+<b:if cond='data:blog.pageType == "static_page"
+      or data:blog.pageType == "item"'>
+    <title id="page-title">
+        <data:blog.pageName /> - <data:blog.pageTitle />
+    </title>
+    <b:else />
+    <title id="page-title">
+        <data:blog.pageTitle />
+    </title>
+</b:if>
+
+<b:skin>
+    <![CDATA[
+    ]]>
+</b:skin>

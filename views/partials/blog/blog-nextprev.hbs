@@ -1,0 +1,17 @@
+﻿<!--blog-nextprev-->
+<b:includable id="blog-nextprev">
+    <div class="blog-nextprev">
+        <!--prev-->
+        <b:if cond="data:newerPageUrl">
+            <a class="prev" expr:href="data:newerPageUrl">
+                {{text.newerPageTitle}}
+            </a>
+        </b:if>
+        <!--next-->
+        <b:if cond="data:olderPageUrl">
+            <a class="next" expr:href="data:olderPageUrl">
+                {{text.olderPageTitle}}
+            </a>
+        </b:if>
+    </div>
+</b:includable>

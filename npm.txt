@@ -1,0 +1,18 @@
+npm install
+npm install --save-dev express
+
+npm install --save-dev express-handlebars
+
+npm install --save-dev grunt-assemble
+
+npm install --save-dev grunt-autoprefixer
+
+npm install --save-dev grunt-cli
+
+npm install --save-dev grunt-contrib-less
+
+npm install --save-dev grunt-contrib-watch
+
+npm install --save-dev grunt-csscomb
+
+exit

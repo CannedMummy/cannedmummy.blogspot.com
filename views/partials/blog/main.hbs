@@ -1,0 +1,43 @@
+﻿<!--blog-main-->
+<b:includable id="main">
+    <b:if cond='data:blog.pageType == "index"'>
+        <div class="blog-index">
+            <div class="title">
+                <span class="post">Bài đăng</span> trên <span class="blog">Blog</span>
+            </div>
+
+            <b:if cond="data:navMessage">
+                <div class="nav-message">
+                    <img src="{{url.file}}/imgs/others/monster-1.svg" />
+
+                    <div class="content">
+                        {{text.blogSearchMessage}}
+                    </div>
+                </div>
+            </b:if>
+
+            <b:loop values="data:posts" var="post">
+                <b:include name="blog-post-index" data="data:post" />
+            </b:loop>
+
+            <b:include name="blog-nextprev" />
+        </div>
+
+        <b:else />
+        <div class="blog-post">
+            <b:loop values="data:posts" var="post">
+                <b:include name="blog-post" data="data:post" />
+
+                <b:include name="blog-comments" data="data:post" />
+            </b:loop>
+        </div>
+    </b:if>
+
+    <div class="ads">
+        <b:if cond="data:post.includeAd">
+            <div class='inline-ad'>
+                <data:adCode />
+            </div>
+        </b:if>
+    </div>
+</b:includable>

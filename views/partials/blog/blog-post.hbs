@@ -1,0 +1,63 @@
+﻿<!--blog-index-post-->
+<b:includable id="blog-post-index" var="post">
+    <div class="post">
+        <div class="wrapper">
+            <div class="header"></div>
+
+            <div class="timestamp">
+                <div class="content">
+                    <data:post.timestamp />
+                </div>
+
+                <div class="day">1</div>
+                <div class="month-year">
+                    <span class="month">Jan</span>, <span class="year">2000</span> |
+                </div>
+            </div>
+
+            <div class="content">
+                <a class="title" expr:href="data:post.url">
+                    <data:post.title />
+                </a>
+
+                <div class="snippet">
+                    <b:if cond="data:post.snippet">
+                        <data:post.snippet />
+                    </b:if>
+                </div>
+
+                <a class="more" expr:href="data:post.url">{{text.blogPostMore}}</a>
+            </div>
+
+            <div class="footer"></div>
+        </div>
+
+        <b:if cond="data:post.thumbnailUrl">
+            <div class="thumbnail" expr:thumbnailUrl="data:post.thumbnailUrl" expr:style='"background-image: url(" + data:post.thumbnailUrl + ");"'></div>
+            <b:else />
+            <div class="thumbnail no-image" style="background-image: url({{url.file}}/imgs/thumbnails/empty/default.svg)"></div>
+        </b:if>
+    </div>
+</b:includable>
+
+<!--blog-post-->
+<b:includable id="blog-post" var="post">
+    <div class="summary">
+        <div class="title">
+            <data:post.title />
+        </div>
+
+        {{text.postBy}}
+        <span class="author">
+            <i class="glyphicon glyphicon-leaf"></i> <data:post.author />
+        </span>
+        vào
+        <span class="dateHeader">
+            <i class="glyphicon glyphicon-calendar"></i> <data:post.dateHeader />
+        </span>
+    </div>
+
+    <div class="body">
+        <data:post.body />
+    </div>
+</b:includable>

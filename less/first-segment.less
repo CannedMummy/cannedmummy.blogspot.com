@@ -1,0 +1,44 @@
+@import 'data.less';
+@import 'colors.less';
+
+#first-segment
+{
+    position: relative;
+
+    height: @first-segment-height + 36px;
+
+    background-color: @green;
+    background-image: url('@{file}/imgs/backgrounds/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    > .container
+    {
+        position: relative;
+    }
+
+    > .arrow
+    {
+        position: absolute;
+        bottom: 0;
+
+        overflow: hidden;
+
+        width: 100%;
+        height: 36px;
+
+        > img
+        {
+            position: absolute;
+            top: 0;
+            left: 50%;
+
+            height: 100%;
+
+            -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                 -o-transform: translateX(-50%);
+                    transform: translateX(-50%);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "grunt": "1.0.1"
+  },
+  "devDependencies": {
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "grunt-assemble": "^0.5.0",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-csscomb": "^3.1.1",
+    "grunt-svgmin": "^4.0.0",
+    "grunt-svgo": "^0.1.0",
+    "svgo": "^0.7.2"
+  }
+}

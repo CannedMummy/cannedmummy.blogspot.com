@@ -1,0 +1,26 @@
+[
+  {
+    "outputFileName": "templates/index.min.html",
+    "inputFiles": [
+      "templates/index.html"
+    ]
+  },
+  {
+    "outputFileName": "css/site.min.css",
+    "inputFiles": [
+      "css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "js/site.min.js",
+    "inputFiles": [
+      "js/site.js"
+    ]
+  },
+  {
+    "outputFileName": "js/modernizr-custom.min.js",
+    "inputFiles": [
+      "js/modernizr-custom.js"
+    ]
+  }
+]

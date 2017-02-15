@@ -253,5 +253,5 @@ paket-files/
 
 # Other
 temp*.*
-[Tt]emp/
+[Tt]emp*/
 
