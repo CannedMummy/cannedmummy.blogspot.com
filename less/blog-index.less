@@ -1,194 +1,145 @@
 @import 'data.less';
 @import 'colors.less';
 
-.blog-index
-{
-    > .title
-    {
+.blog-index {
+    > .title {
         font-size: 1.5rem;
         font-weight: 300;
-
         text-align: center;
 
-        > .post
-        {
+        > .post {
             font-size: 2rem;
             font-weight: 500;
         }
 
-        > .blog
-        {
+        > .blog {
             font-size: 3rem;
             font-weight: 600;
-
             color: @orange;
         }
     }
 
-    > .nav-message
-    {
+    > .nav-message {
         position: relative;
-
         height: 120px;
         margin: 1rem auto;
-
         text-align: center;
 
-        > img
-        {
+        > img {
             display: inline-block;
-
             height: 120px;
         }
 
-        > .content
-        {
+        > .content {
             font-size: 1.5rem;
             font-weight: bold;
-
             display: inline-block;
         }
     }
 
-    > .post
-    {
+    > .post {
         position: relative;
-
         width: 100%;
         height: @blog-index-post-height;
         margin-top: 3rem;
 
-        &:nth-of-type(odd)
-        {
-            > .wrapper
-            {
+        &:nth-of-type(odd) {
+            > .wrapper {
                 margin-left: -30px;
             }
         }
 
-        &:nth-of-type(even)
-        {
-            > .wrapper
-            {
+        &:nth-of-type(even) {
+            > .wrapper {
                 margin-left: 30px;
             }
         }
 
-        > .wrapper
-        {
+        > .wrapper {
             position: absolute;
             z-index: 2;
             top: 50%;
             left: 0;
-
             width: 100%;
             height: @blog-index-post-height;
-
             -webkit-transition: all linear .25s;
-                 -o-transition: all linear .25s;
-                    transition: all linear .25s;
+            -o-transition: all linear .25s;
+            transition: all linear .25s;
             -webkit-transform: translateY(-50%);
-                -ms-transform: translateY(-50%);
-                 -o-transform: translateY(-50%);
-                    transform: translateY(-50%);
-
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
             background-color: fade(@white, 75%);
             -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, .15);
-                    box-shadow: 0 0 1.5rem rgba(0, 0, 0, .15);
+            box-shadow: 0 0 1.5rem rgba(0, 0, 0, .15);
 
             > .timestamp,
-            > .content
-            {
+            > .content {
                 position: absolute;
                 top: 0;
-
                 height: 100%;
             }
 
-            > .timestamp
-            {
+            > .timestamp {
                 font-family: @font-family-1;
-
                 left: 0;
-
                 width: @blog-index-post-timestamp-width;
                 padding: .5rem;
-
                 text-align: right;
 
-                > .content
-                {
+                > .content {
                     display: none;
                 }
 
-                > .day
-                {
+                > .day {
                     font-size: 3rem;
                     font-weight: bold;
                     line-height: 1;
                 }
 
-                .month-year
-                {
-                    > .month
-                    {
+                .month-year {
+                    > .month {
                         font-size: 1.25rem;
                         font-weight: bold;
                     }
                 }
             }
 
-            > .content
-            {
+            > .content {
                 left: @blog-index-post-timestamp-width;
-
                 padding: .5rem;
 
                 > .title,
-                > .snippet
-                {
+                > .snippet {
                     overflow: hidden;
-
                     text-align: left;
                 }
 
-                > .title
-                {
+                > .title {
                     font-family: @font-family-1;
-
                     display: block;
-
                     height: 5rem;
-
                     color: @blue;
                 }
 
-                > .snippet
-                {
+                > .snippet {
                     height: 9rem;
                 }
 
-                > .more
-                {
+                > .more {
                     position: absolute;
                     bottom: 1rem;
                     left: .5rem;
-
                     display: block;
-
                     width: 8rem;
                     padding: .25rem;
-
                     text-align: center;
                     vertical-align: middle;
-
                     color: @black;
                     border: 2px solid @black;
 
-                    &:hover
-                    {
+                    &:hover {
                         text-decoration: none;
-
                         color: @white;
                         background-color: @black;
                     }
@@ -197,191 +148,146 @@
         }
 
         > .header,
-        > .footer
-        {
+        > .footer {
             display: none;
         }
 
-        > .thumbnail
-        {
+        > .thumbnail {
             position: absolute;
             top: 0;
             left: 50%;
-
             width: @blog-index-post-height;
             height: @blog-index-post-height;
             margin-bottom: 0;
             padding: 0;
-
             -webkit-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
-                 -o-transform: translateX(-50%);
-                    transform: translateX(-50%);
-
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
             border: none;
             border-radius: 0;
             background-color: @white;
             background-repeat: no-repeat;
             background-position: center;
             -webkit-background-size: auto 100%;
-                    background-size: auto 100%;
+            background-size: auto 100%;
             -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, .25);
-                    box-shadow: 0 0 1.5rem rgba(0, 0, 0, .25);
+            box-shadow: 0 0 1.5rem rgba(0, 0, 0, .25);
         }
     }
 
-    .blog-nextprev
-    {
+    .blog-nextprev {
         font-size: 0;
-
         width: 100%;
         margin: 2rem auto;
-
         text-align: center;
 
         > .next,
-        > .prev
-        {
+        > .prev {
             font-size: @default-font-size;
-
             display: inline-block;
-
             width: 128px;
             margin: auto .5rem;
             padding: .25rem;
-
             vertical-align: middle;
-
             color: @black;
             border: 2px solid @black;
 
-            &:hover
-            {
+            &:hover {
                 text-decoration: none;
-
                 color: @white;
                 background-color: @black;
             }
         }
     }
 
-    .ads
-    {
+    .ads {
         display: none;
     }
 }
 
-@media (min-width: 640px)
-{
-    .blog-index
-    {
-        > .post
-        {
-            &:nth-of-type(odd)
-            {
-                > .wrapper
-                {
+@media (min-width: 640px) {
+    .blog-index {
+        > .post {
+            &:nth-of-type(odd) {
+                > .wrapper {
                 }
 
-                > .thumbnail
-                {
+                > .thumbnail {
                     right: 0;
                 }
             }
 
-            &:nth-of-type(even)
-            {
-                > .wrapper
-                {
+            &:nth-of-type(even) {
+                > .wrapper {
                 }
 
-                > .thumbnail
-                {
+                > .thumbnail {
                     left: 0;
                 }
             }
 
-            > .wrapper
-            {
+            > .wrapper {
                 height: 300px;
 
-                > .content
-                {
-                    > .title
-                    {
+                > .content {
+                    > .title {
                         font-size: 1.25rem;
                     }
 
-                    > .snippet
-                    {
+                    > .snippet {
                         height: 7rem;
                     }
                 }
             }
 
-            > .thumbnail
-            {
+            > .thumbnail {
                 left: auto;
-
                 -webkit-transform: none;
-                    -ms-transform: none;
-                     -o-transform: none;
-                        transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
             }
         }
     }
 }
 
-@media (min-width: 992px)
-{
-    .blog-index
-    {
-        > .post
-        {
-            &:nth-of-type(odd)
-            {
-                > .wrapper
-                {
-                    > .content
-                    {
+@media (min-width: 992px) {
+    .blog-index {
+        > .post {
+            &:nth-of-type(odd) {
+                > .wrapper {
+                    > .content {
                         padding-right: @blog-index-post-height - 30px;
                     }
                 }
 
-                > .thumbnail
-                {
+                > .thumbnail {
                     right: 0;
                 }
             }
 
-            &:nth-of-type(even)
-            {
-                > .wrapper
-                {
-                    > .timestamp
-                    {
+            &:nth-of-type(even) {
+                > .wrapper {
+                    > .timestamp {
                         left: @blog-index-post-height - 30px;
                     }
 
-                    > .content
-                    {
+                    > .content {
                         left: @blog-index-post-height + @blog-index-post-timestamp-width - 30px;
                     }
                 }
 
-                > .thumbnail
-                {
+                > .thumbnail {
                     left: 0;
                 }
             }
 
-            > .wrapper
-            {
+            > .wrapper {
                 z-index: auto;
             }
 
-            > .thumbnail
-            {
+            > .thumbnail {
                 z-index: auto;
                 left: auto;
             }

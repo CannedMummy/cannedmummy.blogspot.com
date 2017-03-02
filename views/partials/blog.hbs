@@ -1,19 +1,15 @@
 ﻿<div id="blog">
-    <div class="container">
-        <b:section id="blog-content" class="blog-content"
-                   maxwidgets="1" showaddelements="no">
+    <b:section id="blog-content" class="blog-content"
+               maxwidgets="1" showaddelements="no">
+        <b:widget id="Blog1" locked="true"
+                  title="{{text.blogTitle}}" type="Blog" visible="true">
+            {{> main}}
 
-            <b:widget id="Blog1" locked="true"
-                      title="{{text.blogTitle}}" type="Blog" visible="true">
+            {{> blog-post}}
 
-                {{> main}}
+            {{> blog-nextprev}}
 
-                {{> blog-post}}
-
-                {{> blog-nextprev}}
-
-                {{> blog-comments}}
-            </b:widget>
-        </b:section>
-    </div>
+            {{> blog-comments}}
+        </b:widget>
+    </b:section>
 </div>

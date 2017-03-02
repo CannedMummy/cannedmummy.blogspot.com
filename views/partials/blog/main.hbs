@@ -2,25 +2,23 @@
 <b:includable id="main">
     <b:if cond='data:blog.pageType == "index"'>
         <div class="blog-index">
-            <div class="title">
-                <span class="post">Bài đăng</span> trên <span class="blog">Blog</span>
-            </div>
-
-            <b:if cond="data:navMessage">
-                <div class="nav-message">
-                    <img src="{{url.file}}/imgs/others/monster-1.svg" />
-
-                    <div class="content">
-                        {{text.blogSearchMessage}}
-                    </div>
+            <div class="container">
+                <div class="title">
+                    <span class="post">Bài đăng</span> trên <span class="blog">Blog</span>
                 </div>
-            </b:if>
-
-            <b:loop values="data:posts" var="post">
-                <b:include name="blog-post-index" data="data:post" />
-            </b:loop>
-
-            <b:include name="blog-nextprev" />
+                <b:if cond="data:navMessage">
+                    <div class="nav-message">
+                        <img src="{{url.file}}/imgs/others/monster-1.svg" />
+                        <div class="content">
+                            {{text.blogSearchMessage}}
+                        </div>
+                    </div>
+                </b:if>
+                <b:loop values="data:posts" var="post">
+                    <b:include name="blog-post-index" data="data:post" />
+                </b:loop>
+                <b:include name="blog-nextprev" />
+            </div>
         </div>
 
         <b:else />
