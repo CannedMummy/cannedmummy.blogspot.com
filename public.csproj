@@ -1,11 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Compile Remove="nbproject\**" />
+    <Compile Remove="temp_fonts\**" />
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="nbproject\**" />
+    <Content Remove="temp_fonts\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="nbproject\**" />
+    <EmbeddedResource Remove="temp_fonts\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="nbproject\**" />
+    <None Remove="temp_fonts\**" />
+    <None Remove="wwwroot\**" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />

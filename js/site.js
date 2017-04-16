@@ -1,12 +1,12 @@
 ﻿var thumbnail = [
-'https://rawgit.com/CannedMummy/cannedmummy.blogspot.com/dev/imgs/thumbnails/empty/1.svg',
-'https://rawgit.com/CannedMummy/cannedmummy.blogspot.com/dev/imgs/thumbnails/empty/2.svg',
-'https://rawgit.com/CannedMummy/cannedmummy.blogspot.com/dev/imgs/thumbnails/empty/3.svg',
-'https://rawgit.com/CannedMummy/cannedmummy.blogspot.com/dev/imgs/thumbnails/empty/4.svg',
-'https://rawgit.com/CannedMummy/cannedmummy.blogspot.com/dev/imgs/thumbnails/empty/5.svg',
-'https://rawgit.com/CannedMummy/cannedmummy.blogspot.com/dev/imgs/thumbnails/empty/6.svg',
-'https://rawgit.com/CannedMummy/cannedmummy.blogspot.com/dev/imgs/thumbnails/empty/7.svg',
-'https://rawgit.com/CannedMummy/cannedmummy.blogspot.com/dev/imgs/thumbnails/empty/8.svg'
+'https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/imgs/thumbnails/empty/1.svg',
+'https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/imgs/thumbnails/empty/2.svg',
+'https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/imgs/thumbnails/empty/3.svg',
+'https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/imgs/thumbnails/empty/4.svg',
+'https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/imgs/thumbnails/empty/5.svg',
+'https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/imgs/thumbnails/empty/6.svg',
+'https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/imgs/thumbnails/empty/7.svg',
+'https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/imgs/thumbnails/empty/8.svg'
 ];
 
 var month = [
