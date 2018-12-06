@@ -6,7 +6,7 @@
     font-style: normal;
 
     src: url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.eot');
-    src: local('SVN-Servetica-Medium'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.eot?#iefix') format('embedded-opentype'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.woff2') format('woff2'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.woff') format('woff'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.ttf') format('truetype'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.svg#SVN-Servetica-Medium') format('svg');
+    src: local('SVN-Servetica-Medium'), url('https://cdn.jsdelivr.net/gh/CannedMummy/cannedmummy.blogspot.com@release/fonts/SVN-Servetica-Medium.eot?#iefix') format('embedded-opentype'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.woff2') format('woff2'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.woff') format('woff'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.ttf') format('truetype'), url('https://cdn.jsdelivr.net/gh/CannedMummy/cannedmummy.blogspot.com@release/fonts/SVN-Servetica-Medium.svg#SVN-Servetica-Medium') format('svg');
 }
 @font-face
 {
@@ -15,7 +15,7 @@
     font-style: normal;
 
     src: url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/Stiff-Staff-Heavy.eot');
-    src: local('Stiff-Staff-Heavy'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.eot?#iefix') format('embedded-opentype'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.woff2') format('woff2'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.woff') format('woff'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.ttf') format('truetype'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.svg#Stiff-Staff-Heavy') format('svg');
+    src: local('Stiff-Staff-Heavy'), url('https://cdn.jsdelivr.net/gh/CannedMummy/cannedmummy.blogspot.com@release/fonts/Stiff-Staff-Heavy.eot?#iefix') format('embedded-opentype'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.woff2') format('woff2'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.woff') format('woff'), url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.ttf') format('truetype'), url('https://cdn.jsdelivr.net/gh/CannedMummy/cannedmummy.blogspot.com@release/fonts/Stiff-Staff-Heavy.svg#Stiff-Staff-Heavy') format('svg');
 }
 html,
 body
